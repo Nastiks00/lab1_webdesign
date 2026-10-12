@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitHub — фитнес-клуб</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+
+<!-- Прогресс-бар прокрутки -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">FitHub</a>
+    <nav class="nav">
+      <a href="#features" class="nav__link">Возможности</a>
+      <a href="#how" class="nav__link">Как это работает</a>
+      <a href="#reviews" class="nav__link">Отзывы</a>
+      <a href="#cta" class="btn btn--accent btn--sm">Начать</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+      <span class="theme-toggle__icon">🌙</span>
+    </button>
+    <button class="burger" id="burger" aria-expanded="false" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Мобильное меню -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose" aria-label="Закрыть">✕</button>
+  <nav class="mobile-menu__nav">
+    <a href="#features" class="mobile-menu__link">Возможности</a>
+    <a href="#how" class="mobile-menu__link">Как это работает</a>
+    <a href="#reviews" class="mobile-menu__link">Отзывы</a>
+    <a href="#cta" class="mobile-menu__link">Начать</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero__inner">
+    <h1 class="hero__title reveal">Твой первый шаг к форме мечты</h1>
+    <p class="hero__subtitle reveal">Современный клуб, опытные тренеры и первое занятие — бесплатно</p>
+    <a href="#cta" class="btn btn--accent reveal">Записаться на пробное</a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="container">
+    <h2 class="section-title reveal">Почему выбирают нас</h2>
+    <div class="features__grid">
+      <article class="feature reveal">
+        <iconify-icon icon="mdi:dumbbell" width="32" class="feature__icon"></iconify-icon>
+        <h3 class="feature__title">Современное оборудование</h3>
+        <p class="feature__text">Тренажёры Technogym, зоны кардио и кроссфита</p>
+      </article>
+      <article class="feature reveal">
+        <iconify-icon icon="mdi:account-check" width="32" class="feature__icon"></iconify-icon>
+        <h3 class="feature__title">Опытные тренеры</h3>
+        <p class="feature__text">Сертифицированные специалисты с опытом 5+ лет</p>
+      </article>
+      <article class="feature reveal">
+        <iconify-icon icon="mdi:clock-outline" width="32" class="feature__icon"></iconify-icon>
+        <h3 class="feature__title">Удобный график</h3>
+        <p class="feature__text">Работаем с 6:00 до 23:00 без выходных</p>
+      </article>
+      <article class="feature reveal">
+        <iconify-icon icon="mdi:heart-outline" width="32" class="feature__icon"></iconify-icon>
+        <h3 class="feature__title">Комфорт</h3>
+        <p class="feature__text">Душ, сауна, шкафчики, полотенца</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <h2 class="section-title reveal">Как это работает</h2>
+    <div class="how__grid">
+      <div class="step reveal">
+        <div class="step__num">1</div>
+        <h3 class="step__title">Оставляете заявку</h3>
+        <p class="step__text">30 секунд на сайте</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__num">2</div>
+        <h3 class="step__title">Приходите на пробное</h3>
+        <p class="step__text">Бесплатно, без обязательств</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__num">3</div>
+        <h3 class="step__title">Проходим диагностику</h3>
+        <p class="step__text">Тренер составляет план</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__num">4</div>
+        <h3 class="step__title">Начинаете тренироваться</h3>
+        <p class="step__text">В своём темпе</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="section-title reveal">Что говорят клиенты</h2>
+    <div class="reviews__grid">
+      <blockquote class="review reveal">
+        <p class="review__text">«За 4 месяца сбросил 12 кг. Тренер подобрал программу под мой график.»</p>
+        <footer class="review__author">— Алексей, 32 года</footer>
+      </blockquote>
+      <blockquote class="review reveal">
+        <p class="review__text">«Всегда боялась зала, думала, что буду выглядеть глупо. Здесь всё иначе — атмосфера дружелюбная.»</p>
+        <footer class="review__author">— Мария, 27 лет</footer>
+      </blockquote>
+      <blockquote class="review reveal">
+        <p class="review__text">«Хожу с женой по утрам перед работой. Удобно, что открываются в 6 утра.»</p>
+        <footer class="review__author">— Дмитрий, 41 год</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <div class="container cta__inner">
+    <h2 class="cta__title reveal">Готовы начать?</h2>
+    <p class="cta__subtitle reveal">Первое занятие — бесплатно</p>
+    <a href="#" class="btn btn--dark reveal">Записаться на пробное</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__logo">FitHub</div>
+    <p class="footer__copy">© 2026 FitHub</p>
+    <nav class="footer__nav">
+      <a href="#" class="footer__link">Политика конфиденциальности</a>
+      <span class="footer__sep">·</span>
+      <a href="#" class="footer__link">Контакты</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
